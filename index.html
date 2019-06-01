@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // Adresee
+        var city = "Kyiv";
+        var street = "Darnytskyi bulevard";
+        var number = "8v";
+        var fullAdress = city + ", " + street + ", " + number;
+
+        console.log(fullAdress);
+        // table adres
+        document.write('<table border="1"><tr><td>'+"місто  "+'</td><td>'+city+'</td></tr><tr><td>'+"вулиця  "+'</td><td>'+street+'</td></tr><tr><td>'+"номер будинку  "+'</td><td>'+number+'</td></tr></table>');
+        // allert
+        alert("Hello world!");
+        // comparison
+        var serverUser = "user1";
+        var userId = prompt();
+
+        console.log(serverUser == userId);
+        // fistName lastName
+        var firstName = prompt("Введіть ім'я");
+        var lastName = prompt("Введіть фамілію");
+        
+        document.write( "<h1>" + firstName + " " + lastName  + "</h1>");
+        // hobby
+        var hobby = prompt("Введіть Ваше хобі");
+        var work = prompt("Де ви працюєте");
+        var education = prompt("Ваша освіта");
+        var rundomNumber = +prompt("Введіть будь-яке число");
+        
+        document.write( '<ol><li>' + hobby + '</li><li>' + work + '</li><li>' + education + '</li></ol>' );
+        document.write(rundomNumber + 13);
+        document.write( '<span>' + rundomNumber + 13+ '</span>');
+        rundomNumber +=13; // 
+        document.write( '<span>' + rundomNumber + '</span>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

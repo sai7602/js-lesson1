@@ -1,0 +1,85 @@
+﻿<!-- 
+    1. По координатам двух точек, которые вводит пользователь, определить уравнение прямой, проходящей через эти точки.
+    Общий вид уравнения: y = kx + b; где k = (y1 - y2) / (x1 - x2), b = y2 - k*x2.
+    
+    2. Обменять значения двух переменных, используя третью (буферную) переменную.
+    
+    3. Объявите две переменные: admin и name. Запишите в name строку "Василий". Замените значение из name в admin. Выведите admin.
+    
+    4. Получить от пользователя данные о пользователе: имя, фамилию, возраст. Обработать их и вывести на экран.
+    
+    5. Запросите у пользователя его возраст, после чего выведите на экран модальное окно с вопросом: "Ваш возраст ...(введеное пользователем число) лет?". Далее в зависимости от выбора пользователя выводится модальное окно с информацией true или false.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var k;
+        var b;
+        var y1 = prompt("input y1");
+        var y2 = prompt("input y2");
+        var x1 = prompt("input x1");
+        var x2 = prompt("input x2");
+
+        k = (y1 - y2) / (x1 - x2);
+        b = y2 - k * x2;
+
+        console.log(y1);
+        console.log(y2);
+        console.log(x1);
+        console.log(x2);
+
+        if (b >= 0) {
+            console.log("y = " + k + "x" + "+" + b);
+        } else {
+            console.log("y = " + k + "x" + b);
+        }
+
+        var x3 = x1;
+
+        x1 = x2;
+        x2 = x3;
+
+        console.log(y1);
+        console.log(y2);
+        console.log(x1);
+        console.log(x2);
+
+        if (b >= 0) {
+            console.log("y = " + k + "x" + "+" + b);
+        } else {
+            console.log("y = " + k + "x" + b);
+        }
+
+        var admin;
+        var name = "Василий";
+
+        admin = name;
+
+        console.log(admin);
+
+        var firstName = prompt("Введіть ім'я");
+        var lastName = prompt("Введіть фамілію");
+        var age = prompt("Введіть Ваш вік");
+
+        console.log(firstName + " " + lastName + " " + "Ваш вік: " + age);
+
+        var answer = confirm("Ваш вік " + age + " років? ");
+
+        console.log(answer);
+
+        document.write(firstName + " " + lastName + " " + "Ваш вік: " + age);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
